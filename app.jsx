@@ -219,7 +219,7 @@ let areaRB = new ol.layer.Vector({
     isWFST: true,
     title: 'Районы РБ',
     popupInfo: '<h4 align="center"><u>[name]</u></h4> ' +
-        '<div class="col-1-3"><b>Площадь</b>:</div> <div class="col-2-3">[area] кв.км</div>',
+    '<div class="col-1-3"><b>Площадь</b>:</div> <div class="col-2-3">[area] кв.км</div>',
     style: new ol.style.Style({
         stroke: new ol.style.Stroke({
             color: 'black',
@@ -251,23 +251,23 @@ let viewObjectGeo = new ol.layer.Vector({
     isWFST: true,
     title: 'Объекты р-я отходов',
     popupInfo: '<h4 align="center"><u>[name_] (ОРО)</u></h4> ' +
-        '<div class="col-1-3"><b>Адрес</b>:</div> <div class="col-2-3">[address]</div>' +
-        '<div class="col-1-3"><b>Вместимость</b>:</div> <div class="col-2-3">[capacity] куб.м</div>' +
-        '<div class="col-1-3"><b>№ рег. в ГРОРО</b>:</div> <div class="col-2-3">[num_reg_reestr]</div>' +
-        '<div class="col-1-3"><b>Ввод в экспл.</b>:</div> <div class="col-2-3">[year_expluat] год</div>' +
-        '<div class="col-1-3"><b>Код ОКТМО</b>:</div> <div class="col-2-3">[oktmo]</div>' +
-        '<div class="col-1-3"><b>Код назнач.</b>:</div> <div class="col-2-3">[purpose]</div>' +
-        '<div class="col-1-3"><b>Код вида</b>:</div> <div class="col-2-3">[species]</div>' +
-        '<div class="col-1-3"><b>Код состояния</b>:</div> <div class="col-2-3">[condition]</div>' +
-        '<div class="col-1-3"><b>Мощность</b>:</div> <div class="col-2-3">[power_m] куб.м/год</div>' +
-        '<div class="col-1-3"><b>Мощность</b>:</div> <div class="col-2-3">[power_t] т/год</div>' +
-        '<div class="col-1-3"><b>СЗЗ</b>:</div> <div class="col-2-3">[szz_m] м</div>' +
-        '<div class="col-1-3"><b>Долгота</b>:</div> <div class="col-2-3">[longitude]</div>' +
-        '<div class="col-1-3"><b>Широта</b>:</div> <div class="col-2-3">[latitude]</div>' +
-        '<div class="col-1-3"><b>Код владельца</b>:</div> <div class="col-2-3">[tenant_id]</div>' +
-        '<div class="col-1-3"><b>Территория</b>:</div> <div class="col-2-3">[special_terr]</div>' +
-        '<div class="col-1-3"><b>Мониторинг</b>:</div> <div class="col-2-3">[monitoring]</div>' +
-        '<div class="col-1-3"><b>Вид защиты</b>:</div> <div class="col-2-3">[protection]</div>'
+    '<div class="col-1-3"><b>Адрес</b>:</div> <div class="col-2-3">[address]</div>' +
+    '<div class="col-1-3"><b>Вместимость</b>:</div> <div class="col-2-3">[capacity] куб.м</div>' +
+    '<div class="col-1-3"><b>№ рег. в ГРОРО</b>:</div> <div class="col-2-3">[num_reg_reestr]</div>' +
+    '<div class="col-1-3"><b>Ввод в экспл.</b>:</div> <div class="col-2-3">[year_expluat] год</div>' +
+    '<div class="col-1-3"><b>Код ОКТМО</b>:</div> <div class="col-2-3">[oktmo]</div>' +
+    '<div class="col-1-3"><b>Код назнач.</b>:</div> <div class="col-2-3">[purpose]</div>' +
+    '<div class="col-1-3"><b>Код вида</b>:</div> <div class="col-2-3">[species]</div>' +
+    '<div class="col-1-3"><b>Код состояния</b>:</div> <div class="col-2-3">[condition]</div>' +
+    '<div class="col-1-3"><b>Мощность</b>:</div> <div class="col-2-3">[power_m] куб.м/год</div>' +
+    '<div class="col-1-3"><b>Мощность</b>:</div> <div class="col-2-3">[power_t] т/год</div>' +
+    '<div class="col-1-3"><b>СЗЗ</b>:</div> <div class="col-2-3">[szz_m] м</div>' +
+    '<div class="col-1-3"><b>Долгота</b>:</div> <div class="col-2-3">[longitude]</div>' +
+    '<div class="col-1-3"><b>Широта</b>:</div> <div class="col-2-3">[latitude]</div>' +
+    '<div class="col-1-3"><b>Код владельца</b>:</div> <div class="col-2-3">[tenant_id]</div>' +
+    '<div class="col-1-3"><b>Территория</b>:</div> <div class="col-2-3">[special_terr]</div>' +
+    '<div class="col-1-3"><b>Мониторинг</b>:</div> <div class="col-2-3">[monitoring]</div>' +
+    '<div class="col-1-3"><b>Вид защиты</b>:</div> <div class="col-2-3">[protection]</div>'
     ,
     style: ObjectGeoStyle
 });
@@ -280,7 +280,7 @@ let viewProcessingPoint = new ol.layer.Vector({
     wfsInfo: {
         featureNS: 'http://www.opengeospatial.net/cadastr2020',
         attributes: ['name_', 'address', 'oktmo', 'subject_id', 'longitude',
-            'latitude','power', 'fkko_list', 'resources_list','date_expluat'],
+            'latitude', 'power', 'fkko_list', 'resources_list', 'date_expluat'],
         featureType: 'processing_point',
         featurePrefix: 'Cadastr2020',
         geometryType: 'Point',
@@ -290,15 +290,15 @@ let viewProcessingPoint = new ol.layer.Vector({
     isWFST: true,
     title: 'Пункты обработки отходов',
     popupInfo: '<h4 align="center"><u>[name_] (ПОО)</u></h4> ' +
-        '<div class="col-1-3"><b>Адрес</b>:</div> <div class="col-2-3">[address]</div>' +
-        '<div class="col-1-3"><b>Код ОКТМО</b>:</div> <div class="col-2-3">[oktmo]</div>' +
-        '<div class="col-1-3"><b>ID владельца</b>:</div> <div class="col-2-3">[subject_id]</div>' +
-        '<div class="col-1-3"><b>Долгота</b>:</div> <div class="col-2-3">[longitude]</div>' +
-        '<div class="col-1-3"><b>Широта</b>:</div> <div class="col-2-3">[latitude]</div>' +
-        '<div class="col-1-3"><b>Мощность</b>:</div> <div class="col-2-3">[power] куб.м/год</div>' +
-        '<div class="col-1-3"><b>Перечень отходов</b>:</div> <div class="col-2-3">[fkko_list]</div>' +
-        '<div class="col-1-3"><b>Лист ресурсов</b>:</div> <div class="col-2-3">[resources_list]</div>' +
-        '<div class="col-1-3"><b>Ввод в экспл.</b>:</div> <div class="col-2-3">[date_expluat]</div>',
+    '<div class="col-1-3"><b>Адрес</b>:</div> <div class="col-2-3">[address]</div>' +
+    '<div class="col-1-3"><b>Код ОКТМО</b>:</div> <div class="col-2-3">[oktmo]</div>' +
+    '<div class="col-1-3"><b>ID владельца</b>:</div> <div class="col-2-3">[subject_id]</div>' +
+    '<div class="col-1-3"><b>Долгота</b>:</div> <div class="col-2-3">[longitude]</div>' +
+    '<div class="col-1-3"><b>Широта</b>:</div> <div class="col-2-3">[latitude]</div>' +
+    '<div class="col-1-3"><b>Мощность</b>:</div> <div class="col-2-3">[power] куб.м/год</div>' +
+    '<div class="col-1-3"><b>Перечень отходов</b>:</div> <div class="col-2-3">[fkko_list]</div>' +
+    '<div class="col-1-3"><b>Лист ресурсов</b>:</div> <div class="col-2-3">[resources_list]</div>' +
+    '<div class="col-1-3"><b>Ввод в экспл.</b>:</div> <div class="col-2-3">[date_expluat]</div>',
     style: processingPointStyle
 });
 
@@ -310,7 +310,7 @@ let viewCollectionPoint = new ol.layer.Vector({
     wfsInfo: {
         featureNS: 'http://www.opengeospatial.net/cadastr2020',
         attributes: ['name_', 'address', 'oktmo', 'subject_id', 'longitude',
-            'latitude','power', 'fkko_list','date_expluat'],
+            'latitude', 'power', 'fkko_list', 'date_expluat'],
         featureType: 'collection_point',
         featurePrefix: 'Cadastr2020',
         geometryType: 'Point',
@@ -320,23 +320,23 @@ let viewCollectionPoint = new ol.layer.Vector({
     isWFST: true,
     title: 'Пункты сбора отходов',
     popupInfo: '<h4 align="center"><u>[name_] (ПCО)</u></h4> ' +
-        '<div class="col-1-3"><b>Адрес</b>:</div> <div class="col-2-3">[address]</div>' +
-        '<div class="col-1-3"><b>Код ОКТМО</b>:</div> <div class="col-2-3">[oktmo]</div>' +
-        '<div class="col-1-3"><b>ID владельца</b>:</div> <div class="col-2-3">[subject_id]</div>' +
-        '<div class="col-1-3"><b>Долгота</b>:</div> <div class="col-2-3">[longitude]</div>' +
-        '<div class="col-1-3"><b>Широта</b>:</div> <div class="col-2-3">[latitude]</div>' +
-        '<div class="col-1-3"><b>Перечень отходов</b>:</div> <div class="col-2-3">[fkko_list]</div>' +
-        '<div class="col-1-3"><b>Ввод в экспл.</b>:</div> <div class="col-2-3">[date_expluat]</div>',
+    '<div class="col-1-3"><b>Адрес</b>:</div> <div class="col-2-3">[address]</div>' +
+    '<div class="col-1-3"><b>Код ОКТМО</b>:</div> <div class="col-2-3">[oktmo]</div>' +
+    '<div class="col-1-3"><b>ID владельца</b>:</div> <div class="col-2-3">[subject_id]</div>' +
+    '<div class="col-1-3"><b>Долгота</b>:</div> <div class="col-2-3">[longitude]</div>' +
+    '<div class="col-1-3"><b>Широта</b>:</div> <div class="col-2-3">[latitude]</div>' +
+    '<div class="col-1-3"><b>Перечень отходов</b>:</div> <div class="col-2-3">[fkko_list]</div>' +
+    '<div class="col-1-3"><b>Ввод в экспл.</b>:</div> <div class="col-2-3">[date_expluat]</div>',
     style: collectionPointStyle
 });
 
 let mousePositionControl = new ol.control.MousePosition({
-        projection: 'EPSG:4326',
-        className: 'custom-mouse-position',
-        target: document.getElementById('location'),
-        coordinateFormat: ol.coordinate.createStringXY(8),
-        undefinedHTML: '&nbsp;'
-      });
+    projection: 'EPSG:4326',
+    className: 'custom-mouse-position',
+    target: document.getElementById('location'),
+    coordinateFormat: ol.coordinate.createStringXY(8),
+    undefinedHTML: '&nbsp;'
+});
 
 let map = new ol.Map({
     //controls: [],
@@ -497,5 +497,109 @@ WasteCadastr.childContextTypes = {muiTheme: React.PropTypes.object};
 
 WasteCadastr = injectIntl(WasteCadastr);
 
-ReactDOM.render(<IntlProvider locale={locale}
-                              messages={i18n}><WasteCadastr/></IntlProvider>, document.getElementById('main'));
+class Auth {
+    constructor() {
+        this.isAuthenticated = this.isAuthenticated.bind(this);
+        this.Login = this.Login.bind(this);
+        this.Logout = this.Logout.bind(this);
+        this.getCookie = this.getCookie.bind(this);
+        this.setCookie = this.setCookie.bind(this);
+        this.users = {
+            'admin': 'admin1',
+            'testo': 'tiesto',
+            'basshunter': 'dotA'
+        };
+    }
+
+    isAuthenticated() {
+        return this.getCookie('token') != "";
+    };
+
+    Login(login, password) {
+        console.log(login + " " + password);
+        let user = this.users[login];
+        if (user === password) {
+            this.setCookie('token', 'huinya', 3600);
+            console.log('cookie set');
+            window.location.reload();
+        }
+        else {
+            console.log('Cookie sad');
+            alert("wrong login or password, bitch");
+        }
+    };
+
+    Logout() {
+        this.deleteCookie('token');
+        window.location.reload();
+    };
+
+    getCookie(cname) {
+        console.log("GetCookie");
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    };
+
+    setCookie(cname, cvalue, expirationSeconds) {
+        var d = new Date();
+        d.setTime(d.getTime() + (expirationSeconds * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";";
+    }
+
+    deleteCookie(name) {
+        setCookie(name, "", {
+            'max-age': -1
+        })
+    };
+}
+
+function AuthRenderer() {
+    let auth = new Auth();
+    if (auth.isAuthenticated()) {
+        return (<IntlProvider locale={locale}
+                              messages={i18n}><WasteCadastr/></IntlProvider>)
+    }
+    else {
+        return (
+            <div>
+                <h1>Login</h1>
+                <form id='loginform'>
+                    <div>
+                        <label
+                            htmlFor="email"> Email </label>
+                        <input id="login" name="login" required/>
+                    </div>
+                    < div>
+                        < label
+                            htmlFor="password"> Password </label>
+                        <input type="password" id="password" name="password" required/>
+                    </div>
+                    <button onClick={
+                        (e) => {
+                            e.preventDefault();
+                            let login = document.getElementById('login');
+                            let pass = document.getElementById('password');
+
+                            auth.Login(login.value, pass.value);
+                        }
+                    }> Login</button>
+                </form>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<AuthRenderer/>
+    , document.getElementById('main'));
