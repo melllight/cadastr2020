@@ -39,7 +39,7 @@
     "browserify": "^11.2.0",
     "cssify": "^0.8.0",
     "envify": "^3.4.0",
-    "eslint": "1.9.0",
+    "eslint": "4.18.2",
     "eslint-plugin-react": "3.9.0",
     "fs-extra": "0.26.2",
     "json-http-proxy": "1.0.0-ALPHA-4",
